@@ -1,0 +1,49 @@
+
+.secnav a{
+    text-decoration: none;
+    margin: 0 80px;
+}
+header .navi{
+    text-size-adjust: 16px;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    padding: 0 100px;
+}
+.buybutton:hover{
+    background-color: #1082FF;
+    
+}
+
+
+
+
+
+
+
+.Cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Cardimg{
+    width:285px;
+    height: 538px;
+    background-color: antiquewhite;
+}
+.Card{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: hidden;
+}
+.title1{
+    margin-top: 20px;
+}
+.card-img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+    
