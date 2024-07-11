@@ -1,0 +1,21 @@
+body{
+    font-family: "Inter", sans-serif;
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 50px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+header .btn{
+    font-size: 16px;
+}
+.banner{
+    background-image: url('../img/Joe\ Hisaishi\ mo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 100px;
+}
