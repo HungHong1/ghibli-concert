@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>Ghibli concert</title>
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="Muave.css" />
         <script src="script.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,31 +24,162 @@
         <div><button type="button" class="buybutton">Mua vé ngay</button></div>
         </header>   
        <div id="carouselExampleFade" class="carousel slide carousel-fade">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-        <a class="titleslide">Nàng công chúa ở Thung lũng gió</a>
-        <p class="bodytextslide" >"Nàng công chúa ở Thung lũng gió" là phim hoạt hình Ghibli do Miyazaki Hayao đạo diễn, ra mắt năm 1984. Phim kể về công chúa Nausicaä trong thế giới hậu khải huyền, với thông điệp về hòa hợp giữa con người và môi trường. Phim đạt doanh thu 710 triệu yên và giành nhiều giải thưởng.</p>
-      <img src="Image/1.%20N%C3%A0ng%20c%C3%B4ng%20ch%C3%BAa%20%E1%BB%9F%20Thung%20l%C5%A9ng%20gi%C3%B3%20(1984).jpg" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="Image/2.%20Laputa_%20L%C3%A2u%20%C4%91%C3%A0i%20tr%C3%AAn%20kh%C3%B4ng%20(1986).jpg" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="Image/2.%20Laputa_%20L%C3%A2u%20%C4%91%C3%A0i%20tr%C3%AAn%20kh%C3%B4ng%20(1986).jpg" class="d-block w-100">
-    </div>
+           <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="gtitle">
+            <a class="titleslide">Nàng công chúa ở Thung lũng gió</a>
+            <p class="bodytextslide">"Nàng công chúa ở Thung lũng gió" là phim hoạt hình Ghibli do Miyazaki Hayao đạo diễn,
+          ra mắt năm 1984. Phim kể về công chúa Nausicaä trong thế giới hậu khải huyền, với thông điệp về hòa hợp giữa
+          con người và môi trường. Phim đạt doanh thu 710 triệu yên và giành nhiều giải thưởng.</p>
+            </div>
+        <img src="Image/1.%20N%C3%A0ng%20c%C3%B4ng%20ch%C3%BAa%20%E1%BB%9F%20Thung%20l%C5%A9ng%20gi%C3%B3%20(1984).jpg"
+          class="imgslide1 d-block w-100">
+      </div>
+      <div class="carousel-item">
+          <div class="gtitle2">
+            <a class="titleslide">Laputa. Lâu đài trên không</a>
+            <p class="bodytextslide">"Laputa: Lâu đài trên không là một trong những bộ phim hoạt hình Ghibli đình đám và thu hút được sự chú ý của người xem phim sau hàng thập kỷ ra mắt.</p>
+            </div>
+        <img src="Image/2.%20Laputa_%20L%C3%A2u%20%C4%91%C3%A0i%20tr%C3%AAn%20kh%C3%B4ng%20(1986).jpg"
+          class="imgslide d-block w-100">
+      </div>
+      <div class="carousel-item">
+          <div class="gtitle3">
+            <a class="titleslide">Mộ đom đóm</a>
+            <p class="bodytextslide">"Mộ đom đóm là bộ phim hoạt hình Ghibli nổi tiếng được ra mắt vào năm 1988 và đạo diễn Takahata Isao. Đây là bộ phim được chuyển thể từ tiểu thuyết cùng tên của tác giả Nosaka Akiyuki.</p>
+            </div>
+        <img src="Image/3.%20M%E1%BB%99%20%C4%91om%20%C4%91%C3%B3m%20(1988).jpg" class="imgslide d-block w-100">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+           
+           
+  </div>
+        
+        <div class="progressbar">
+        <ul class="titleprogress">
+                <li class="Step1 active">Thông tin sự kiện</li>
+                <li class="Step2">Thông tin đặt hàng</li>
+                <li class="Step3">Thanh toán</li>
+        </ul>
+        </div><br>
+        <h2 class="Titlebig1 text-center">lựa chọn chương trình</h2>
+    <div class="Cards">
+        <div class="Card">
+            <img class="card-img" src="Image/Bu%E1%BB%95i%20h%C3%B2a%20nh%E1%BA%A1c%20%20phim%20m%E1%BB%9Bi%20%E2%80%A8%E2%80%9CThi%E1%BA%BFu%20ni%C3%AAn%20v%C3%A0%20chim%20di%E1%BB%87c%E2%80%9D.jpg">
+            <a class="Titlecard text-center">Studio Ghibli Flims của Hayao Miyazaki</a>
+            <a class="datecard">15/08/2024</a>
+            <a class="chitiet-btn text-center">Chi tiết</a>
+            </div>
+        <div class="Card">
+            <img class="card-img" src="Image/Bu%E1%BB%95i%20h%C3%B2a%20nh%E1%BA%A1c%20%20phim%20m%E1%BB%9Bi%20%E2%80%A8%E2%80%9CThi%E1%BA%BFu%20ni%C3%AAn%20v%C3%A0%20chim%20di%E1%BB%87c%E2%80%9D.jpg">
+            <a class="Titlecard text-center">Studio Ghibli Flims của Hayao Miyazaki</a>
+            <a class="datecard">15/08/2024</a>
+            <a class="chitiet-btn text-center">Chi tiết</a>
+            </div><div class="Card">
+            <img class="card-img" src="Image/Bu%E1%BB%95i%20h%C3%B2a%20nh%E1%BA%A1c%20%20phim%20m%E1%BB%9Bi%20%E2%80%A8%E2%80%9CThi%E1%BA%BFu%20ni%C3%AAn%20v%C3%A0%20chim%20di%E1%BB%87c%E2%80%9D.jpg">
+            <a class="Titlecard text-center">Studio Ghibli Flims của Hayao Miyazaki</a>
+            <a class="datecard">15/08/2024</a>
+            <a class="chitiet-btn text-center">Chi tiết</a>
+            </div><div class="Card">
+            <img class="card-img" src="Image/Bu%E1%BB%95i%20h%C3%B2a%20nh%E1%BA%A1c%20%20phim%20m%E1%BB%9Bi%20%E2%80%A8%E2%80%9CThi%E1%BA%BFu%20ni%C3%AAn%20v%C3%A0%20chim%20di%E1%BB%87c%E2%80%9D.jpg">
+            <a class="Titlecard text-center">Studio Ghibli Flims của Hayao Miyazaki</a>
+            <a class="datecard">15/08/2024</a>
+            <a class="chitiet-btn text-center">Chi tiết</a>
+            </div><div class="Card">
+            <img class="card-img" src="Image/Bu%E1%BB%95i%20h%C3%B2a%20nh%E1%BA%A1c%20%20phim%20m%E1%BB%9Bi%20%E2%80%A8%E2%80%9CThi%E1%BA%BFu%20ni%C3%AAn%20v%C3%A0%20chim%20di%E1%BB%87c%E2%80%9D.jpg">
+            <a class="Titlecard text-center">Studio Ghibli Flims của Hayao Miyazaki</a>
+            <a class="datecard">15/08/2024</a>
+            <a class="chitiet-btn text-center">Chi tiết</a>
+            </div><div class="Card">
+            <img class="card-img" src="Image/Bu%E1%BB%95i%20h%C3%B2a%20nh%E1%BA%A1c%20%20phim%20m%E1%BB%9Bi%20%E2%80%A8%E2%80%9CThi%E1%BA%BFu%20ni%C3%AAn%20v%C3%A0%20chim%20di%E1%BB%87c%E2%80%9D.jpg">
+            <a class="Titlecard text-center">Studio Ghibli Flims của Hayao Miyazaki</a>
+            <a class="datecard">15/08/2024</a>
+            <a class="chitiet-btn text-center">Chi tiết</a>
+            </div><div class="Card">
+            <img class="card-img" src="Image/Bu%E1%BB%95i%20h%C3%B2a%20nh%E1%BA%A1c%20%20phim%20m%E1%BB%9Bi%20%E2%80%A8%E2%80%9CThi%E1%BA%BFu%20ni%C3%AAn%20v%C3%A0%20chim%20di%E1%BB%87c%E2%80%9D.jpg">
+            <a class="Titlecard text-center">Studio Ghibli Flims của Hayao Miyazaki</a>
+            <a class="datecard">15/08/2024</a>
+            <a class="chitiet-btn text-center">Chi tiết</a>
+            </div><div class="Card">
+            <img class="card-img" src="Image/Bu%E1%BB%95i%20h%C3%B2a%20nh%E1%BA%A1c%20%20phim%20m%E1%BB%9Bi%20%E2%80%A8%E2%80%9CThi%E1%BA%BFu%20ni%C3%AAn%20v%C3%A0%20chim%20di%E1%BB%87c%E2%80%9D.jpg">
+            <a class="Titlecard text-center">Studio Ghibli Flims của Hayao Miyazaki</a>
+            <a class="datecard">15/08/2024</a>
+            <a class="chitiet-btn text-center">Chi tiết</a>
+            </div><div class="Card">
+            <img class="card-img" src="Image/Bu%E1%BB%95i%20h%C3%B2a%20nh%E1%BA%A1c%20%20phim%20m%E1%BB%9Bi%20%E2%80%A8%E2%80%9CThi%E1%BA%BFu%20ni%C3%AAn%20v%C3%A0%20chim%20di%E1%BB%87c%E2%80%9D.jpg">
+            <a class="Titlecard text-center">Studio Ghibli Flims của Hayao Miyazaki</a>
+            <a class="datecard">15/08/2024</a>
+            <a class="chitiet-btn text-center">Chi tiết</a>
+            </div><div class="Card">
+            <img class="card-img" src="Image/Bu%E1%BB%95i%20h%C3%B2a%20nh%E1%BA%A1c%20%20phim%20m%E1%BB%9Bi%20%E2%80%A8%E2%80%9CThi%E1%BA%BFu%20ni%C3%AAn%20v%C3%A0%20chim%20di%E1%BB%87c%E2%80%9D.jpg">
+            <a class="Titlecard text-center">Studio Ghibli Flims của Hayao Miyazaki</a>
+            <a class="datecard">15/08/2024</a>
+            <a class="chitiet-btn text-center">Chi tiết</a>
+            </div>
+        </div>
+        
+        
+        <div class="Giave">
+        <h2 class="giaveghibli" >Giá vé của Ghibli Concert </h2><br>
+        <div class="boxgiave">
+            <div class="vethuong">
+            <a class="loaive">Vé Thường</a>
+            <a class="mucgia">200.000VND</a>
+            <a class="chitietve">Bao gồm những chỗ ngồi ở xa sân khấu</a>
+            </div>
+            <div class="vethuong">
+            <a class="loaive">Vé Thường</a>
+            <a class="mucgia">200.000VND</a>
+            <a class="chitietve">Bao gồm những chỗ ngồi ở xa sân khấu</a>
+            </div><div class="vethuong">
+            <a class="loaive">Vé Thường</a>
+            <a class="mucgia">200.000VND</a>
+            <a class="chitietve">Bao gồm những chỗ ngồi ở xa sân khấu</a>
+            </div>
+        </div>
+        </div>
+     <h2 class="titlebig3" >Chọn vị trí ghế ngồi tại đây </h2><br>
+    <div class="hangghe">
+        <div class="cumghe">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+  </label>
 </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+           <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+  </label>
+</div> <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+  </label>
+</div> <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+  </label>
+</div> <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+  </label>
+</div>  
+        </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     </body>
     
 </html>

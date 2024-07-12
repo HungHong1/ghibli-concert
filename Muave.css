@@ -1,35 +1,339 @@
-
-.secnav a{
-    text-decoration: none;
-    margin: 0 80px;
+body{
+  font-family: "Inter", sans-serif;
+    background-color: black;
+    user-select: none;
 }
-header .navi{
+.navi{
+    text-decoration: none;
+    padding: 20px 100px;
     text-size-adjust: 16px;
     z-index: 1000;
     position: fixed;
     width: 100%;
-    padding: 0 100px;
+    height: 93px;
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+.secnav a{
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    padding: 0 80px;
+}
+.secnav a:hover{
+    color: #1082FF;
+    transition: color 0.5s;
+    animation: ease-in-out;
+}
+.buybutton{
+    color: white;
+    padding: 8px 16px;
+    border-radius: 100px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.00);
 }
 .buybutton:hover{
     background-color: #1082FF;
-    
+    transition: background-color 0.3s;
+    animation: ease-in-out;
+}
+.carousel-inner{
+    height: 690px;
+}
+.gtitle{
+    position: absolute;
+     z-index: 2000;
+    width: 600px;
+    margin-left: 100px;
+    top: 200px;
+}
+.gtitle2{
+    position: absolute;
+     z-index: 2000;
+    width: 600px;
+    margin-left: 100px;
+    top: 200px;
+}
+.gtitle3{
+    position: absolute;
+     z-index: 2000;
+    width: 600px;
+    margin-left: 100px;
+    top: 200px;
+}
+.titleslide{
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-decoration: none;
+}
+.bodytextslide{
+    color: white;
+    margin-top: 19px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+.carousel-control-prev-icon{
+ margin-left: -150px;
+}
+.carousel-control-next-icon{
+    margin-right: -150px;
 }
 
+.progressbar {
+    counter-reset: step;
+    margin-top: 150px;
+    margin-bottom: 200px;
+    justify-content: center;
+    align-items: center;
+}
 
+.progressbar li {
+  float: left;
+  list-style: none;
+  position: relative;
+  text-align: center;
+  width: calc(100% / 3);
+}
+.titleprogress{
+    font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: capitalize;
+}
+.progressbar li:before {
+  background: black;
+  border: 2px solid #BFBFBF;
+  border-radius: 50%;
+  color: white;
+  content: counter(step);
+  counter-increment: step;
+  display: block;
+  font-weight: 00;
+  height: 30px;
+  line-height: 27px;
+  margin: 0 auto 10px;
+  text-align: center;
+  width: 30px;
+}
+.progressbar li:after {
+  background: #BFBFBF;
+  content: '';
+  height: 3px;
+  left: -50%;
+  position: absolute;
+  top: 15px;
+  width: 100%;
+  z-index: -1;
+}
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active:after,
+.progressbar li.complete:after {
+  background: #1082FF;
+}
 
+.progressbar li.active:before,
+.progressbar li.complete:before {
+  background: #1082FF;
+  border-color: #1082FF;
+  color: white;
+}
 
+.progressbar li.active {
+  color: #1082FF;
+  font-weight: 700;
+}
 
-
+.progressbar li.complete {
+  color: #333;
+  font-weight: 700;
+}
+.Titlebig1{
+    color: var(--Blue, #1082FF);
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+text-decoration: none;
+    text-align: center;
+    margin: 80px 0;
+}
 
 .Cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 100px;
+    
 }
-.Cardimg{
-    width:285px;
-    height: 538px;
-    background-color: antiquewhite;
+.Card{
+    width: 285px;
+    height: 565px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+flex-direction: column;
+    padding: 0;
+    margin-top: 80px;
+}
+.incard{
+    justify-content: center;
+    text-align: center;
+}
+.card-img{
+    height: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.Titlecard{
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.datecard{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.chitiet-btn{
+color: white;
+width: 150px;
+height: 50px;
+padding: 8px 16px;
+gap: 8px;
+border-radius: 100px;
+border: 1px solid var(--White, #FFF);
+text-decoration: none;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+    align-content: center;
+}
+.chitiet-btn:hover{
+    border: solid #1082FF;
+    background-color: #1082FF;
+    transition: background-color 0.3s, boder 0.3s;
+}
+.Giave{
+    background-color: #161616;
+    margin: 100px 0;
+    width: 100%;
+    height: 600px;
+    padding: 0px 0;
+}
+.giaveghibli{
+    color: var(--Blue, #1082FF);
+text-align: center;
+/* Small Header Bold */
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.boxgiave{
+    
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 100px;
+}
+.vethuong{
+    
+    display: flex;
+width: 500px;
+padding: 45px 28px ;
+flex-direction: column;
+align-items: center;
+    justify-content: center;
+gap: 16px;
+    border-radius: 30px;
+background: var(--White, #FFF);
+}
+.loaive{
+    font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+    color: var(--Blue, #1082FF);
+    text-decoration: none;
+}
+.mucgia{
+color: var(--Blue, #1082FF);
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    text-decoration: none;
+}
+.chitietve{
+    color: var(--Blue, #1082FF);
+text-align: center;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    text-decoration: none;
+}
+.titlebig3{
+    color: var(--Blue, #1082FF);
+text-align: center;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+align-self: stretch;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+#flexCheckChecked{
+    padding: 20px;
+}
+.hangghe{
+    margin: 0 100px;
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 376px;
+    height: 96px;
+    
+}
+
+
+
+/*
+.Cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .Card{
     margin-top: 50px;
@@ -38,12 +342,13 @@ header .navi{
     align-items: center;
     border: hidden;
 }
-.title1{
-    margin-top: 20px;
-}
-.card-img{
-    height: 100%;
+.Card-img{
+    width:285px;
+    height: 538px;
+    background-color: antiquewhite;
     object-fit: cover;
     border-radius: 20px;
 }
-    
+.Titlecard{
+    margin-top: 20px;
+}*/
